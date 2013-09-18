@@ -3,7 +3,8 @@ package com.diggtext.model;
 import java.io.Serializable;
 import javax.persistence.*;
 import java.sql.Timestamp;
-
+import org.hibernate.annotations.GenericGenerator; 
+import javax.validation.constraints.NotNull;
 
 /**
  * The persistent class for the Story database table.
@@ -14,7 +15,9 @@ public class Story {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="Id")
+	@GenericGenerator(name = "generator", strategy = "guid", parameters = {})
+	@GeneratedValue(generator = "generator")
+	@Column(name = "Id" , columnDefinition="uniqueidentifier")
 	private String id;
 
 	@Column(name="ApprovedAt")
@@ -46,14 +49,8 @@ public class Story {
 	@Column(name="Title")
 	private String title;
 
-	@Column(name="UniqueName")
-	private String uniqueName;
-
 	@Column(name="Url")
 	private String url;
-
-	@Column(name="UrlHash")
-	private String urlHash;
 
 	@Column(name="UserId")
 	private String userId;
@@ -154,28 +151,12 @@ public class Story {
 		this.title = title;
 	}
 
-	public String getUniqueName() {
-		return this.uniqueName;
-	}
-
-	public void setUniqueName(String uniqueName) {
-		this.uniqueName = uniqueName;
-	}
-
 	public String getUrl() {
 		return this.url;
 	}
 
 	public void setUrl(String url) {
 		this.url = url;
-	}
-
-	public String getUrlHash() {
-		return this.urlHash;
-	}
-
-	public void setUrlHash(String urlHash) {
-		this.urlHash = urlHash;
 	}
 
 	public String getUserId() {
