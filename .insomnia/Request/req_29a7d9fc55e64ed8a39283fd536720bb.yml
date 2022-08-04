@@ -1,0 +1,79 @@
+_id: req_29a7d9fc55e64ed8a39283fd536720bb
+type: Request
+parentId: wrk_ab2a8a44638c4340adce9fd09ab29aa9
+modified: 1659612730413
+created: 1659612551823
+url: "{{ base_url }}/api/finance/quarterly"
+name: Compute quarterly finance report
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    {
+        "companyCode": "220618020",
+        "quarter": "Q2",
+        "finances": {
+          "sales": {
+            "value": 14025229,
+            "y_1": 7012614.5
+          },      
+          "cogs": {
+            "value": 4569
+          },
+          "grossProfitOrLoss": {
+            "value": 324869,
+            "y_1": 1299477
+          },
+          "profitOrLossFromOperations": {
+            "value": 75896,
+            "y_1": 364678
+          },
+          "netProfitOrLoss": {
+            "value": 5358,
+            "y_1": 66870
+          },
+          "otherActivitiesIncome": {
+            "value": 458,
+            "y_1": 5558
+          },
+          "profitLossBeforeTaxes": {
+            "value": 261699,
+            "y_1": 1046797
+          },
+          "interestExpenses": {
+            "value": 1883,
+            "y_1": 7534
+          },
+          "depreciationAmortisation": {
+            "value": 2955,
+            "y_1": 9550
+          },
+          "inventories": {
+            "value": 479
+          },
+          "biologicalAssets": {
+            "value": 4558
+          },
+          "amountsReceivedOneYear": {
+            "value": 856334
+          },
+          "debtToSuppliers": {
+            "value": 4553
+          }
+        }
+      }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_506fb66966344fffb241565a6fc6d941
+authentication: {}
+metaSortKey: -1659612551823
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,218 @@
+_id: req_d91bf46292e745788249aeb00a707ecb
+type: Request
+parentId: wrk_ab2a8a44638c4340adce9fd09ab29aa9
+modified: 1659614106325
+created: 1659612477927
+url: "{{ base_url }}/api/finance/yearly"
+name: Compute yearly finance report
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    {
+        "companyCode": "11162757",
+        "finances": {
+          "sales": {
+            "value": 14025229,
+            "y_1": 7012614.5
+          },
+          "cogs": {
+            "value": 4569
+          },
+          "grossProfitOrLoss": {
+            "value": 1299477
+          },
+          "operatingExpenditures": {
+            "value": 0
+          },
+          "costsOfSales": {
+            "value": 0
+          },
+          "administrativeCosts":  {
+            "value": 0
+          },
+          "profitOrLossFromOperations": {
+            "value": 364678
+          },
+          "otherActivitiesIncome": {
+            "value": 858
+          },
+          "financialInvestmentActivity": {
+            "value": 0
+          },
+          "income": {
+            "value": 0
+          },
+          "consumption": {
+            "value": 0
+          },
+          "profitLossBeforeTaxes": {
+            "value": 1046797
+          },
+          "profitTax": {
+            "value": 0
+          },
+          "netProfitOrLoss": {
+            "value": 66870
+          },
+          "fixedAssets": {
+            "value": 0
+          },
+          "intangibleAssets": {
+            "value": 4670
+          },
+          "developmentWorks": {
+            "value": 99216
+          },
+          "goodwill": {
+            "value": 0
+          },
+          "patentsLicenses": {
+            "value": 486
+          },
+          "software": {
+            "value": 47780
+          },
+          "otherIntangibleAssets": {
+            "value": 5896
+          },
+          "tangibleAssets": {
+            "value": 0
+          },
+          "land": {
+            "value": 0
+          },
+          "buildings": {
+            "value": 0
+          },
+          "equipments": {
+            "value": 0
+          },
+          "vehicles": {
+            "value": 0
+          },
+          "otherEquipment": {
+            "value": 789
+          },
+          "unfinishedConstruction": {
+            "value": 158963
+          },
+          "otherMaterialAssets": {
+            "value": 5236
+          },
+          "financialAssets": {
+            "value": 0
+          },
+          "shortTermAssets": {
+            "value": 3363580
+          },
+          "iventoriesContractsInProgress": {
+            "value": 899707
+          },
+          "inventories": {
+            "value": 479
+          },
+          "prepayments": {
+            "value": 0
+          },
+          "unfinishedContracts": {
+            "value": 0
+          },
+          "amountsReceivedOneYear": {
+            "value": 856334
+          },
+          "otherCurrentAssets": {
+            "value": 0
+          },
+          "moneyEquivalents": {
+            "value": 55000
+          },
+          "totalAssets": {
+            "value": 3478705
+          },
+          "netWorth": {
+            "value": 1021946
+          },
+          "revaluationReserve": {
+            "value": 100
+          },
+          "dotationsSubsidies": {
+            "value": 2589
+          },
+          "totalDebt": {
+            "value": 2456759
+          },
+          "longTermLiabilities": {
+            "value": 0
+          },
+          "financialDebts": {
+            "value": 7894
+          },
+          "otherFinancialDebts": {
+            "value": 3694
+          },
+          "debtToSuppliers": {
+            "value": 4553
+          },
+          "provisions": {
+            "value": 0
+          },
+          "shortTermLiabilities": {
+            "value": 2389228
+          },
+          "longTermDebtCurrentPortion": {
+            "value": 45578
+          },
+          "forCreditInstitutions": {
+            "value": 7546
+          },
+          "otherDebts": {
+            "value": 7553
+          },
+          "advancePaymentsReceived": {
+            "value": 0
+          },
+          "otherLiabilities": {
+            "value": 0
+          },
+          "totalEquity": {
+            "value": 3478705
+          },
+          "otherAssets": {
+            "value": 0
+          },
+          "investmentProperty": {
+            "value": 75264
+          },
+          "accruedIncome": {
+            "value": 733
+          },
+          "interestExpenses": {
+            "value": 7534.8
+          },      
+          "depreciationAmortisation": {
+            "value": 955
+          },
+          "biologicalAssets": {
+            "value": 4558
+          },
+          "debtToAssociatedCompanies": {
+            "value": 874.78
+          }
+        }
+      }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f1a05380efdc4c25a7ee89c175ceff6a
+authentication: {}
+metaSortKey: -1659612551873
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

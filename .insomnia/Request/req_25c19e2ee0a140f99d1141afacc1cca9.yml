@@ -1,0 +1,129 @@
+_id: req_25c19e2ee0a140f99d1141afacc1cca9
+type: Request
+parentId: wrk_ab2a8a44638c4340adce9fd09ab29aa9
+modified: 1659612729271
+created: 1659612007182
+url: "{{ base_url }}/api/finance/quarterly/has_quarters"
+name: Compute quarterly finance report with previous year quarters
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    {
+        "companyCode": "220618020",
+        "quarter": "Q2",
+        "finances": {
+          "sales": {
+            "value": 14025229,
+            "q1": 2556023,
+            "q2": 5675712,
+            "q3": 8674672,
+            "q4": 13138362,
+            "y_1_q1": 2961437,
+            "y_1_q2": 5289883,
+            "y_1_q3": 8840566,
+            "y_1_q4": 13717288,
+            "y_2": 13684207
+          },
+          "cogs": {
+            "value": 4569
+          },
+          "grossProfitOrLoss": {
+            "q1": 194717,
+            "q2": 441973,
+            "q3": 673163,
+            "q4": 993207,
+            "y_1_q1": 336642,
+            "y_1_q2": 275215,
+            "y_1_q3": 333184,
+            "y_1_q4": 424219
+          },
+          "profitOrLossFromOperations": {
+            "q1": -2956,
+            "q2": -95031,
+            "q3": -15385,
+            "q4": -129672,
+            "y_1_q1": 22653,
+            "y_1_q2": 116822,
+            "y_1_q3": 26619,
+            "y_1_q4": 184807
+          },
+          "netProfitOrLoss": {
+            "q1": -20869,
+            "q2": -138455,
+            "q3": -74267,
+            "q4": -193980,
+            "y_1_q1": 11084,
+            "y_1_q2": 104044,
+            "y_1_q3": 18091,
+            "y_1_q4": 127105
+          },
+          "otherActivitiesIncome": {
+            "q1": 1807,
+            "q2": 2062,
+            "q3": 4129,
+            "q4": 7043,
+            "y_1_q1": 957,
+            "y_1_q2": 957,
+            "y_1_q3": 3782,
+            "y_1_q4": 4091
+          },
+          "profitLossBeforeTaxes": {
+            "q1": -20869,
+            "q2": -138455,
+            "q3": -74267,
+            "q4": -193980,
+            "y_1_q1": 11084,
+            "y_1_q2": 104044,
+            "y_1_q3": 18091,
+            "y_1_q4": 178064
+          },      
+          "interestExpenses": {
+            "q1": 27322,
+            "q2": 45486,
+            "q3": 63011,
+            "q4": 71351,
+            "y_1_q1": 13313,
+            "y_1_q2": 12778,
+            "y_1_q3": 12310,
+            "y_1_q4": 14074
+          },
+          "depreciationAmortisation": {
+            "q1": 12010,
+            "q2": 28583,
+            "q3": 47419,
+            "q4": 68037,
+            "y_1_q1": 11847,
+            "y_1_q2": 11805,
+            "y_1_q3": 11748,
+            "y_1_q4": 12092
+          },
+          "inventories": {
+            "value": 479
+          },
+          "biologicalAssets": {
+            "value": 4558
+          },
+          "amountsReceivedOneYear": {
+            "value":  856334
+          },
+          "debtToSuppliers":  {
+            "value": 4553
+          }
+        }
+      }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_25bb662f30cd41fbb5eed9a1a5031ef8
+authentication: {}
+metaSortKey: -1659612242454.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
